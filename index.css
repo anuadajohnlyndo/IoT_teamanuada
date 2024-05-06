@@ -1,0 +1,68 @@
+*{
+    font-family: main-font;
+    font-size: 18px;
+    /**outline: 1px solid #141E46;**/
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    background-color: #fefefe;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.authentication-container{
+    margin-top: 45px;
+    background-color: #fefefe;
+    width: 80%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-evenly;
+    align-items:center;
+}
+
+.input{
+    box-sizing: border-box;
+    height: 45px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+/* .input:focus{
+    outline: none;
+    box-sizing: border-box;
+   
+} */
+
+.button{
+    box-sizing: border-box;
+    height: 45px;
+    width: 100%;
+    border: none;
+    background-color: #141E46;
+    color: #fefefe;
+}
+
+.sec-inputs{
+    height: 120px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+@font-face {
+    font-family: 'main-font';
+    src: url(Fonts/Helvetica.ttf);
+}
