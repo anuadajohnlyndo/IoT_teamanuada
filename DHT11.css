@@ -1,0 +1,51 @@
+*{
+    font-family: main-font;
+    font-size: 18px;
+    /**outline: 1px solid #141E46;**/
+}
+
+body{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.main-container{
+    background-color: #fefefe;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.data-container{
+    background-color: #fefefe;
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+
+.lnkbtn{
+    text-decoration: none;
+    color: black;
+     
+ }
+
+.img-menu-DHT{
+    width: 50px;
+}
+
+.img-menu-Ultra{
+    width: 80px;
+}
+
+
+@font-face {
+    font-family: 'main-font';
+    src: url(Fonts/Helvetica.ttf);
+}
