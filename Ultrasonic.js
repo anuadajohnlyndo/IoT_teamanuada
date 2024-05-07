@@ -35,10 +35,21 @@ window.onload = function () {
 
 function retData() {
   const dbRef = ref(db);
-  get(child(dbRef, "DHT11/")).then((snapshot) => {
+  get(child(dbRef, "Ultrasonic/")).then((snapshot) => {
     if (snapshot.exists()) {
-      temp.innerText = snapshot.val().Temperature + " °C";
-      humidity.innerText = snapshot.val().Humidity + " %";
+      temp.innerText = snapshot.val().Distance + " in";
+
+      if(snapshot.val().Distance > 12){
+        humidity.innerText = "Empty";
+        temp.innerText = "...";
+      }
+      else if(snapshot.val().Distance < 7 && snapshot.val().Distance > 2){
+        humidity.innerText = "Half Full";
+      }
+      else if(snapshot.val().Distance < 3){
+        humidity.innerText = "Full";
+      }
+      
     }
   });
 }
